@@ -13,7 +13,6 @@ app.use("/notes", noteRouter);
 
 app.get("/", async (req, res) => {
   res.status(200).send({ msg: "Tasknest Notes App Backend Sucessfully Deployed and Working check route" });
-  res.status(200).send({ msg: "Working check route" });
   // const user = await UserModule.find();
   // res.send(user);
 });
