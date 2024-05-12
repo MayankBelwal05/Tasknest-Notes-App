@@ -44,6 +44,7 @@ const Signup = () => {
       );
       setShowModal(true);
       setModalMessage("Registration successful");
+      console.log(response);
     } catch (error) {
       setShowModal(true);
       if (error.response && error.response.status === 400) {

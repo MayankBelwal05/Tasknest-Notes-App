@@ -3,7 +3,7 @@ const { connection } = require("./config/db");
 const { userRouter } = require("./routes/userRouters");
 const { noteRouter } = require("./routes/noteRouters");
 const cors = require("cors");
-const { UserModule } = require("./model/userModel");
+// const { UserModule } = require("./model/userModel");
 require("dotenv").config();
 const app = express();
 app.use(cors());
@@ -12,7 +12,7 @@ app.use("/users", userRouter);
 app.use("/notes", noteRouter);
 
 app.get("/", async (req, res) => {
-  res.status(200).send({ msg: "Tasknest Notes App Backend Sucessfully Deployed and Working check route" });
+  res.send({ msg: "Tasknest Notes App Backend Sucessfully Deployed and Working check route" });
   // const user = await UserModule.find();
   // res.send(user);
 });
