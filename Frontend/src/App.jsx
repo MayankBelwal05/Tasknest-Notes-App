@@ -7,9 +7,7 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <NabBar /> */}
       <AllRoutes />
-      {/* <h1 className="text-4xl font-bold underline">Hello world!</h1> */}
     </>
   );
 }

@@ -89,7 +89,6 @@ const NoteCard = ({ noteID, title, body, getNotes }) => {
           w={{ base: "80%", md: "100%" }}
           m={{ base: "auto", md: "0" }}
           textAlign={"center"}
-          // border={"2px solid black"}
         >
           {body}
         </Text>
