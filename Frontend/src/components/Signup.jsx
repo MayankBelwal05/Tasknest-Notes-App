@@ -19,7 +19,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
-import backgroundImage from "../../src/assets/bg.jpg"; 
+import backgroundImage from "../../src/assets/bg2.jpg"; 
 
 
 const Signup = () => {
@@ -35,7 +35,7 @@ const Signup = () => {
     console.log(`${username}, ${password}  , ${email}`);
     try {
       const response = await axios.post(
-        "http://localhost:5000/users/register",
+        "https://tasknest-notes-app.onrender.com/users/register",
         {
           username,
           email,

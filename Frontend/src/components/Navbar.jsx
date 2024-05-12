@@ -32,7 +32,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/users/logout",
+        "https://tasknest-notes-app.onrender.com/users/logout",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -64,10 +64,9 @@ const Navbar = () => {
                 as="h2"
                 fontSize={{ base: "1.6rem", md: "2rem" }}
                 color={"lightgreen"}
-                borderBottom="1px solid lightgreen" // Adding underline style
               >
              <div style={{display:"flex" ,gap:"20px"}}>
-             TaskNest<FaTasks />
+             <FaTasks />TaskNest
              </div>
               </Heading>
             </Link>

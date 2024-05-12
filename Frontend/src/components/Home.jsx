@@ -1,6 +1,6 @@
 import { Box, Button, Heading, Image } from "@chakra-ui/react";
 4;
-import Img from "../assets/homePageImg.png";
+import Img from "../assets/homePageImg2.jpg";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -10,19 +10,20 @@ const Home = () => {
 
   return (
     <>
-      <Box 
+      <Box
         className="bg-[#6e70cf] flex justify-center"
-        mt={{ base: "0" }}
+      
       >
         <Box
-          className="flex items-center justify-center   gap-[3rem]"
+          className="flex items-center justify-center   gap-[4rem]"
           flexDirection={{ base: "column", md: "row" }}
           w={{ base: "100%", md: "80%" }}
-          p={"6rem"}
+          p={"4em"}
         >
           <Box>
-            <Image src={Img} alt="Notes" />
+            <Image src={Img} alt="Notes" style={{ borderRadius: '80px' }} />
           </Box>
+
           <Box width={{ base: "100%", md: "40%" }}>
             <Heading
               as={"h1"}
@@ -55,10 +56,10 @@ const Home = () => {
                     mt={"2rem"}
                     fontSize={"1.3rem"}
                     color={"black"}
-                    bg={"white"}
+                    bg={"lightgreen"}
                     p={"1.3rem 3rem"}
                     // variant={"outline"}
-                    _hover={{ bg: "#90ee90", color: "#091e17" }}
+                    _hover={{ bg: "white", color: "#091e17" }}
                   >
                     SignUp
                   </Button>

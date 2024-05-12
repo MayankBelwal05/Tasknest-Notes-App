@@ -28,7 +28,7 @@ const NoteCard = ({ noteID, title, body, getNotes }) => {
   const handleDelete = async () => {
     try {
       await axios.delete(
-        `http://localhost:5000/notes/${noteID}`,
+        `https://tasknest-notes-app.onrender.com/notes/${noteID}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -49,7 +49,7 @@ const NoteCard = ({ noteID, title, body, getNotes }) => {
   const handleUpdate = async () => {
     try {
       await axios.patch(
-        `http://localhost:5000/notes/${noteID}`,
+        `https://tasknest-notes-app.onrender.com/notes/${noteID}`,
         {
           title: updatedTitle,
           body: updatedBody,

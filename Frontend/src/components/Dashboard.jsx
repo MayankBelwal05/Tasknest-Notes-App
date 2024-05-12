@@ -21,7 +21,7 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import axios from "axios";
-import bgImg from "../assets/bg.jpg";
+import bgImg from "../assets/das.jpg";
 import { useEffect, useState } from "react";
 import NoteCard from "./NoteCard";
 
@@ -42,7 +42,7 @@ const Dashboard = () => {
       }
       try {
         const res = await axios.get(
-          "http://localhost:5000/notes",
+          "https://tasknest-notes-app.onrender.com/notes",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -65,7 +65,7 @@ const Dashboard = () => {
     }
     try {
       const res = await axios.get(
-        "http://localhost:5000/notes",
+        "https://tasknest-notes-app.onrender.com/notes",
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -80,7 +80,7 @@ const Dashboard = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/notes",
+        "https://tasknest-notes-app.onrender.com/notes",
         {
           title,
           body,
