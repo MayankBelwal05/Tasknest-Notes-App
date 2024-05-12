@@ -12,9 +12,9 @@ app.use("/users", userRouter);
 app.use("/notes", noteRouter);
 
 app.get("/", async (req, res) => {
-  // res.status(200).send({ msg: "Tasknest Notes App Backend Sucessfully Deployed and Working check route" });
-  const user = await UserModule.find();
-  res.send(user);
+  res.status(200).send({ msg: "Tasknest Notes App Backend Sucessfully Deployed and Working check route" });
+  // const user = await UserModule.find();
+  // res.send(user);
 });
 
 app.listen(process.env.port, async () => {
