@@ -44,7 +44,7 @@ To run the project locally, follow these steps:
 
 ```
 #### Backend
-Clone the repository: git clone https://github.com/yourusername/TaskNest.git
+Clone the repository: git clone https://github.com/MayankBelwal05/Tasknest-Notes-App
 Navigate to the backend directory: cd TaskNest/backend
 Install dependencies: npm install
 Start the server: npm start
