@@ -101,7 +101,7 @@ const toast = useToast();
       <Container>
         <Box
            p={"2rem"}
-           bg={"rgba(255,255,255,0.20)"} // Set the background color
+           bg={"rgba(255,255,255,0.20)"}
            borderRadius={10}
            boxShadow={"0px 9px 88px -1px rgba(157,159,119,0.89)"}
            style={{ backdropFilter: 'blur(5px)' }}

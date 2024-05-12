@@ -16,7 +16,6 @@ const Home = () => {
       >
         <Box
           className="flex items-center justify-center   gap-[3rem]"
-          // border={"2px solid black"}
           flexDirection={{ base: "column", md: "row" }}
           w={{ base: "100%", md: "80%" }}
           p={"6rem"}
@@ -25,7 +24,6 @@ const Home = () => {
             <Image src={Img} alt="Notes" />
           </Box>
           <Box width={{ base: "100%", md: "40%" }}>
-            {/*  color: "#90ee90"  */}
             <Heading
               as={"h1"}
               fontSize={{ base: "2rem", md: "3rem" }}
