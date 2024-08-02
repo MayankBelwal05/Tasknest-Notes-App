@@ -4,8 +4,8 @@
 TaskNest is a user-friendly todo application that allows users to manage their tasks efficiently. With TaskNest, users can create, update, and delete tasks seamlessly, ensuring they stay organized and on top of their priorities.
 
 ## Deployed App 🖊️
-#### Frontend: [https://tasknest-notes-app.vercel.app/](#)
-#### Backend: [https://tasknest-notes-app.onrender.com/](#)
+#### Frontend: https://tasknest-notes-app.vercel.app/
+#### Backend: https://tasknest-notes-app.onrender.com/
 
 ## Technology Stack  ✍️
 ### Frontend:
